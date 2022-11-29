@@ -58,6 +58,7 @@
   },
   "jest": {
     "moduleNameMapper": {
+      "@/api/(.*)": "<rootDir>/src/api/$1",
       "@/components/(.*)": "<rootDir>/src/components/$1",
       "@/constants/(.*)": "<rootDir>/src/constants/$1",
       "@/features/(.*)": "<rootDir>/src/features/$1",
