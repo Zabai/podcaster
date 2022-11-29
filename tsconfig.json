@@ -13,6 +13,7 @@
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
+      "@/api/*": ["api/*"],
       "@/components/*": ["components/*"],
       "@/constants/*": ["constants/*"],
       "@/features/*": ["features/*"],

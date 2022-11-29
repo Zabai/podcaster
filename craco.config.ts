@@ -3,6 +3,7 @@ import path from "path";
 export default {
   webpack: {
     alias: {
+      "@/api": path.resolve(__dirname, "src/api"),
       "@/components": path.resolve(__dirname, "src/components"),
       "@/constants": path.resolve(__dirname, "src/constants"),
       "@/features": path.resolve(__dirname, "src/features"),

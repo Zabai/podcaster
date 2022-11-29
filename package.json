@@ -23,8 +23,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "precommit": "lint-staged"
@@ -58,6 +58,7 @@
   },
   "jest": {
     "moduleNameMapper": {
+      "@/api/(.*)": "<rootDir>/src/api/$1",
       "@/components/(.*)": "<rootDir>/src/components/$1",
       "@/constants/(.*)": "<rootDir>/src/constants/$1",
       "@/features/(.*)": "<rootDir>/src/features/$1",
