@@ -1,10 +1,11 @@
 import { ROUTES } from "@/constants/routes";
 import { createBrowserRouter } from "react-router-dom";
+import Home from "./Home";
 
 const router = createBrowserRouter([
   {
     path: ROUTES.HOME,
-    element: <div>Podcast list</div>,
+    element: <Home />,
   },
   {
     path: ROUTES.PODCAST_DETAILS,
