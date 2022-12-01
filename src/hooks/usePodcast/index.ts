@@ -5,7 +5,7 @@ import { PodcastDetailsResponse } from "./types";
 
 export default function usePodcast(podcastId: string) {
   return useSWRImmutable<PodcastDetailsResponse>(
-    GET_PODCAST_DETAILS.replace(":podcastId", podcastId),
+    GET_PODCAST_DETAILS.replace(encodeURIComponent(":podcastId"), podcastId),
     fetcher
   );
 }
