@@ -64,6 +64,7 @@
       "@/constants/(.*)": "<rootDir>/src/constants/$1",
       "@/features/(.*)": "<rootDir>/src/features/$1",
       "@/hooks/(.*)": "<rootDir>/src/hooks/$1",
+      "@/stores/(.*)": "<rootDir>/src/stores/$1",
       "@/types/(.*)": "<rootDir>/src/types/$1",
       "@/utils/(.*)": "<rootDir>/src/utils/$1"
     }
