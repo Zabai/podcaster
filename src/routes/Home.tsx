@@ -23,7 +23,9 @@ export default function Home() {
           <Chip color="primary" label={filteredPodcasts.length} />
           <PodcastsSearch />
         </Stack>
-        <PodcastGrid />
+        <Box marginTop={8}>
+          <PodcastGrid />
+        </Box>
       </Box>
     </Container>
   );

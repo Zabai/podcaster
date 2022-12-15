@@ -1,4 +1,4 @@
-import { Avatar, Paper, Typography } from "@mui/material";
+import { Avatar, Box, Paper, Typography } from "@mui/material";
 
 interface Props {
   image: string;
@@ -9,10 +9,21 @@ interface Props {
 export default function RoundImageCard({ image, subtitle, title }: Props) {
   return (
     <Paper sx={{ paddingBottom: 2, paddingX: 1, textAlign: "center" }}>
-      <Avatar
-        src={image}
-        sx={{ height: "64px", marginX: "auto", width: "64px" }}
-      />
+      <Box
+        sx={{
+          alignItems: "center",
+          display: "flex",
+          height: 0,
+          marginBottom: 5,
+          position: "relative",
+          top: "-50%",
+        }}
+      >
+        <Avatar
+          src={image}
+          sx={{ height: "64px", marginX: "auto", width: "64px" }}
+        />
+      </Box>
 
       <Typography color="textPrimary" fontSize={14} marginY={1} variant="h6">
         {title}
