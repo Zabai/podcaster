@@ -3,5 +3,5 @@ export const GET_PODCASTS = `https://api.allorigins.win/raw?url=${encodeURICompo
 )}`;
 
 export const GET_PODCAST_DETAILS = `https://api.allorigins.win/raw?url=${encodeURIComponent(
-  "https://itunes.apple.com/lookup?id=:podcastId"
+  "https://itunes.apple.com/lookup?id=:podcastId&media=podcast&entity=podcastEpisode"
 )}`;
