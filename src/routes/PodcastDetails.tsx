@@ -30,11 +30,7 @@ export default function PodcastDetails() {
         <Grid item md={12 - 5}>
           <Paper sx={{ padding: 1 }}>
             <Typography fontWeight="bold" variant="h6">
-              Episodes:{" "}
-              {data.results.reduce(
-                (prev, current) => prev + current.trackCount,
-                0
-              )}
+              {`Episodes: ${data.resultCount}`}
             </Typography>
           </Paper>
 
