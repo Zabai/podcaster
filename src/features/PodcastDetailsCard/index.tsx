@@ -33,8 +33,13 @@ export default function PodcastDetailsCard({ episode }: Props) {
       <Divider variant="middle" />
 
       <Box marginX={1} marginY={2}>
-        <Typography color="textSecondary" fontSize={14} variant="h6">
-          Description
+        <Typography
+          color="textSecondary"
+          fontSize={14}
+          fontWeight={600}
+          variant="h6"
+        >
+          Description:
         </Typography>
 
         <Typography
