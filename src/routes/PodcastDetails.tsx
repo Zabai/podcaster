@@ -18,13 +18,15 @@ export default function PodcastDetails() {
   if (error || !podcastId) return <div>error</div>;
   if (!data) return <CircularProgress />;
 
+  const [podcast, ...episodes] = data.results;
+
   return (
     <Container maxWidth="md">
       <Header />
 
       <Grid container columnSpacing={12} marginTop={2}>
         <Grid item md={4}>
-          <PodcastDetailsCard episode={data.results.at(0)} />
+          <PodcastDetailsCard podcast={podcast} />
         </Grid>
 
         <Grid item md={12 - 5}>
@@ -34,7 +36,7 @@ export default function PodcastDetails() {
             </Typography>
           </Paper>
 
-          <PodcastEpisodesTable episodes={data.results} podcastId={podcastId} />
+          <PodcastEpisodesTable episodes={episodes} podcastId={podcastId} />
         </Grid>
       </Grid>
     </Container>

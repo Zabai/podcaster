@@ -1,16 +1,16 @@
-import { PodcastEpisode } from "@/types/podcastEpisode";
+import { PodcastDetails } from "@/types/podcastEpisode";
 import { Box, Divider, Paper, Typography } from "@mui/material";
 
 interface Props {
-  episode: PodcastEpisode | undefined;
+  podcast: PodcastDetails | undefined;
 }
 
-export default function PodcastDetailsCard({ episode }: Props) {
+export default function PodcastDetailsCard({ podcast }: Props) {
   return (
     <Paper sx={{ paddingY: 2 }}>
       <Box display="flex" justifyContent="center" marginBottom={2}>
         <img
-          src={episode?.artworkUrl100}
+          src={podcast?.artworkUrl100}
           alt="Logo"
           style={{ borderRadius: 2 }}
           height={128}
@@ -22,11 +22,11 @@ export default function PodcastDetailsCard({ episode }: Props) {
 
       <Box margin={2}>
         <Typography color="textPrimary" fontSize={14} variant="h6">
-          {episode?.collectionName}
+          {podcast?.collectionName}
         </Typography>
 
         <Typography color="textSecondary" fontSize={12} variant="body2">
-          by {episode?.artistName}
+          by {podcast?.artistName}
         </Typography>
       </Box>
 
@@ -48,7 +48,7 @@ export default function PodcastDetailsCard({ episode }: Props) {
           fontStyle="italic"
           variant="body2"
         >
-          {episode?.primaryGenreName}
+          {podcast?.primaryGenreName}
         </Typography>
       </Box>
     </Paper>

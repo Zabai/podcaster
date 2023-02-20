@@ -1,4 +1,4 @@
-export interface PodcastEpisode {
+export interface PodcastDetails {
   wrapperType: string;
   kind: string;
   artistId: number;
@@ -31,4 +31,14 @@ export interface PodcastEpisode {
   artworkUrl600: string;
   genreIds: string[];
   genres: string[];
+}
+
+export interface PodcastEpisode extends PodcastDetails {
+  description: string;
+  episodeUrl: string;
+}
+
+export interface Genre {
+  name: string;
+  id: string;
 }
