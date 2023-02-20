@@ -29,7 +29,7 @@ export default function PodcastDetails() {
           <PodcastDetailsCard podcast={podcast} />
         </Grid>
 
-        <Grid item md={12 - 5}>
+        <Grid item md={7}>
           <Paper sx={{ padding: 1 }}>
             <Typography fontWeight="bold" variant="h6">
               {`Episodes: ${data.resultCount}`}
