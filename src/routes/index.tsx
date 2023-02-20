@@ -1,5 +1,6 @@
 import { ROUTES } from "@/constants/routes";
 import { createBrowserRouter } from "react-router-dom";
+import EpisodeDetails from "./EpisodeDetails";
 import Home from "./Home";
 import PodcastDetails from "./PodcastDetails";
 
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: ROUTES.PODCAST_EPISODE,
-    element: <div>Podcast episode</div>,
+    element: <EpisodeDetails />,
   },
 ]);
 
